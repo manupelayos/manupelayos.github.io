@@ -1,3 +1,4 @@
+```css
 * {
     box-sizing: border-box;
 }
@@ -23,9 +24,6 @@ a {
     max-width: 1100px;
     margin: auto;
 }
-
-
-/* HEADER */
 
 header {
     background: #111;
@@ -61,30 +59,17 @@ nav a:hover {
     color: #e63946;
 }
 
-
-/* INICIO */
-
-.hero {
-    padding: 90px 0;
-    background: #171717;
-    color: white;
+section {
+    padding: 60px 0;
 }
 
-.hero h1 {
-    max-width: 700px;
-    font-size: 48px;
-    margin: 20px 0;
+h1 {
+    font-size: 36px;
 }
 
-.hero p {
-    max-width: 600px;
-    line-height: 1.6;
-}
-
-.hero p:first-child {
-    color: #e63946;
-    font-weight: bold;
-    font-size: 14px;
+h2 {
+    font-size: 30px;
+    margin-top: 0;
 }
 
 .boton {
@@ -99,21 +84,6 @@ nav a:hover {
 .boton:hover {
     background: #c92f3b;
 }
-
-
-/* SECCIONES */
-
-section {
-    padding: 60px 0;
-}
-
-h2 {
-    font-size: 30px;
-    margin-top: 0;
-}
-
-
-/* COCHES */
 
 .coches {
     display: grid;
@@ -154,15 +124,9 @@ h2 {
     font-size: 20px;
 }
 
-
-/* FONDO GRIS */
-
 .gris {
     background: #f2f2f2;
 }
-
-
-/* COMO FUNCIONA */
 
 .pasos {
     display: grid;
@@ -188,9 +152,6 @@ h2 {
     color: #666;
 }
 
-
-/* VENDER */
-
 .vender {
     display: flex;
     justify-content: space-between;
@@ -205,9 +166,6 @@ h2 {
     color: white;
 }
 
-
-/* FOOTER */
-
 footer {
     background: #111;
     color: white;
@@ -218,11 +176,7 @@ footer p {
     color: #aaa;
 }
 
-
-/* MOVIL */
-
 @media (max-width: 800px) {
-
     header .contenedor {
         flex-direction: column;
         gap: 15px;
@@ -233,12 +187,8 @@ footer p {
         justify-content: center;
     }
 
-    .hero h1 {
-        font-size: 38px;
-    }
-
     .coches {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .pasos {
@@ -251,15 +201,13 @@ footer p {
     }
 }
 
-
 @media (max-width: 550px) {
-
     .coches {
         grid-template-columns: 1fr;
     }
 
-    .hero h1 {
-        font-size: 32px;
+    h1 {
+        font-size: 30px;
     }
 
     nav {
@@ -267,3 +215,4 @@ footer p {
         font-size: 14px;
     }
 }
+```
